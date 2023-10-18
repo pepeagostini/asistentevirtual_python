@@ -28,6 +28,25 @@ Cuando se detecta un comando válido, se llama a la función obtener_respuesta(e
 La respuesta se sintetiza en voz mediante la función hablar(texto) y se reproduce para el usuario.
 En resumen, este código permite a los usuarios interactuar con un asistente virtual mediante comandos de voz. El asistente puede responder a preguntas, realizar acciones como abrir programas o páginas web y ofrecer una experiencia de conversación basada en voz.
 
+base de datos
+
+CREATE TABLE respuestas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    palabra_clave VARCHAR(255) NOT NULL,
+    respuesta TEXT NOT NULL,
+    tipo VARCHAR(50) NOT NULL,
+    comando TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+Insert ejemplo
+
+INSERT INTO respuestas (palabra_clave, respuesta, tipo, comando) 
+VALUES ('abrir Visual Studio Code', 'Abriendo Visual Studio Code.', 'accion', 'code'),
+       ('abrir Gmail', 'Abriendo Gmail en tu navegador.', 'accion', 'start https://mail.google.com');
+
 
 Gracias por usar mi codigo, por favor ayudame a seguir mejorando para poder publicar mas codigos y mejorar los actuales
 
