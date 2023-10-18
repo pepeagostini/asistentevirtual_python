@@ -30,3 +30,5 @@ En resumen, este código permite a los usuarios interactuar con un asistente vir
 
 
 Gracias por usar mi codigo, por favor ayudame a seguir mejorando para poder publicar mas codigos y mejorar los actuales
+
+BSC: 0xc67834f2b65324Fce05eA81E2ccF8E1501fbf019
